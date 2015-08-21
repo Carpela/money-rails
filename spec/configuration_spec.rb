@@ -13,7 +13,7 @@ describe "configuration" do
     end
 
     it "adds exchange rates given in config initializer" do
-      expect(Money.us_dollar(100).exchange_to("CAD")).to eq(Money.new(124, "CAD"))
+      expect(Money.us_dollar(100).exchange_to("CAD")).to eq(Money.new(125, "CAD"))
       expect(Money.ca_dollar(100).exchange_to("USD")).to eq(Money.new(80, "USD"))
     end
 
